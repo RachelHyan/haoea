@@ -1,5 +1,5 @@
 const app = require("../app/index");
-const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS } = require("../config/error");
+const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS, NAME_IS_NOT_EXISTS, PASSWORD_IS_INCORRENT, UNAUTHORIZATION } = require("../config/error");
 
 app.on('error', (error, ctx) => {
     let code = 0
@@ -11,9 +11,18 @@ app.on('error', (error, ctx) => {
             message = '用户名或者密码不能为空~'
             break;
         case NAME_IS_ALREADY_EXISTS:
-            code = 409
+            code = 400
             message = '用户名已经存在~'
             break;
+        case NAME_IS_NOT_EXISTS:
+            code = 400
+            message = '用户名不存在'
+        case PASSWORD_IS_INCORRENT:
+            code = 400
+            message = '密码错误'
+        case UNAUTHORIZATION:
+            code = 401
+            message = '无效的token'
     }
 
     ctx.body = {
