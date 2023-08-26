@@ -2,12 +2,12 @@ const mysql = require('mysql2')
 
 // 1. 创建连接池
 const connectionPool = mysql.createPool({
-    host: 'localhost',
+    host: '127.0.0.1', 
     port: 3306,
     database: 'coderhub',
     user: 'root',
-    password: '123456',
-    connectionLimit: 5
+    password: 'zzhy.49927',
+    connectionLimit: 5,
 })
 
 // 2. 测试连接

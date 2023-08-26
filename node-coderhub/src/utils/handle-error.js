@@ -1,5 +1,5 @@
 const app = require("../app/index");
-const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS, NAME_IS_NOT_EXISTS, PASSWORD_IS_INCORRENT, UNAUTHORIZATION } = require("../config/error");
+const { NAME_OR_PASSWORD_IS_REQUIRED, NAME_IS_ALREADY_EXISTS, NAME_IS_NOT_EXISTS, PASSWORD_IS_INCORRENT, UNAUTHORIZATION, UNPERMISSION } = require("../config/error");
 
 app.on('error', (error, ctx) => {
     let code = 0
@@ -23,6 +23,9 @@ app.on('error', (error, ctx) => {
         case UNAUTHORIZATION:
             code = 401
             message = '无效的token'
+        case UNPERMISSION:
+            code = 401
+            message = '您不具备操作的权限~'
     }
 
     ctx.body = {
