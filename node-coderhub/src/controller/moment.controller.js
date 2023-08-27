@@ -44,7 +44,7 @@ class MomentController {
         ctx.body = {
             code: 200,
             message: '查询动态详情成功',
-            data: result[0]
+            data: result
         }
     }
 
@@ -78,6 +78,35 @@ class MomentController {
             code: 200,
             message: '删除动态成功',
             data: result
+        }
+    }
+
+    // 为moment添加label
+    async addLabels(ctx, next) {
+        // 1. 获取参数
+        const { labels } = ctx;
+        const { momentId } = ctx.params;
+
+        // 2. 将 moment_id 和 label_id 添加到 moment_label 表
+        try {
+            for(const label of labels) {
+                // 2.1. 判断 label_id 和 moment_id 是否已经组合存在
+                const isExists = await momentService.hasLabel(momentId, label.id);
+                if(!isExists) {
+                    // 2.2. 不存在关系
+                    await momentService.addLabel(momentId, label.id);
+                }
+            }
+
+            ctx.body = {
+                code: 200,
+                message: '为动态添加标签成功'
+            }
+        } catch (error) {
+            ctx.body = {
+                code: 400,
+                message: '为动态添加标签失败'
+            }
         }
     }
 }

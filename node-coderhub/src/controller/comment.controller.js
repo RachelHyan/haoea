@@ -28,6 +28,21 @@ class CommentController {
             message: "回复成功"
         }
     }
+
+    async remove(ctx, next) {
+        // 1. 获取参数
+        const { commentId } = ctx.params;
+
+        // 2. 删除评论
+        await commentService.remove(commentId);
+
+        // 3. 返回结果
+        ctx.body = {
+            code: 200,
+            message: "删除评论成功"
+        }
+    }
+
 }
 
 module.exports = new CommentController();
