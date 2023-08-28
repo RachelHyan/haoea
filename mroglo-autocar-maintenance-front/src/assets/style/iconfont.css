@@ -1,0 +1,44 @@
+@font-face {
+  font-family: iconfont; /* Project id 3580189 */
+  src:
+    url("//at.alicdn.com/t/c/font_3580189_x7seh52eti.woff2?t=1660212890322") format("woff2"),
+    url("//at.alicdn.com/t/c/font_3580189_x7seh52eti.woff?t=1660212890322") format("woff"),
+    url("//at.alicdn.com/t/c/font_3580189_x7seh52eti.ttf?t=1660212890322") format("truetype");
+}
+
+.iconfont {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: iconfont !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ac-jinggao::before {
+  content: "\e600";
+}
+
+.icon-ac-turnlight-right::before {
+  content: "\e62a";
+}
+
+.icon-ac-turnlight-left::before {
+  content: "\e629";
+}
+
+.icon-ac-worklight::before {
+  content: "\e627";
+}
+
+.icon-ac-positionlight::before {
+  content: "\e628";
+}
+
+.icon-ac-stoplight::before {
+  content: "\e626";
+}
+
+.icon-ac-headlight::before {
+  content: "\e624";
+}
