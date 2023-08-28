@@ -1,0 +1,164 @@
+.panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 388px;
+  min-height: 150px;
+  max-height: calc(100vh - 180px);
+  color: #181b28;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 2px rgb(0 0 0 / 11%);
+}
+
+.panel-tabs {
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  height: 40px;
+  border-bottom: 1px solid #f2f3f4;
+
+  .panel-tab-pane {
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #51565d;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+  }
+
+  .panel-tab-pane--active {
+    color: #1d51f4;
+    border-color: #1d51f4;
+  }
+}
+
+.panel-manual {
+  padding: 16px;
+
+  .el-form--inline {
+    display: flex;
+    column-gap: 8px;
+  }
+}
+
+.panel-table {
+  margin-top: 8px;
+
+  .panel-table-header .el-table__cell {
+    background-color: rgb(47 84 235 / 4%);
+  }
+}
+
+.panel-header {
+  height: 40px;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #333;
+  border: 1px solid #f2f3f4;
+}
+
+.panel-info {
+  .card-header {
+    padding: 16px 16px 8px;
+    border-bottom: 1px dashed #f2f3f4;
+
+    .card-header-title {
+      font-size: 14px;
+      color: #181b28;
+    }
+  }
+
+  &-content {
+    padding: 10px 16px 0;
+    line-height: 25px;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-personnal {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+
+        & > div {
+          position: relative;
+          width: 36px;
+          margin: 5px 7.5px;
+          font-size: 12px;
+          text-align: center;
+
+          .el-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1px;
+            color: #fff;
+            cursor: pointer;
+            background: red;
+            border-radius: 50%;
+          }
+
+          & > p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      &__btn {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    &--search {
+      .el-input-group__append {
+        padding: 5px;
+      }
+    }
+
+    &--msg {
+      & > span {
+        color: #1d51f4;
+      }
+    }
+  }
+}
+
+.el-table--small .cell {
+  padding: 0 5px !important;
+}
+
+.form-input--selected {
+  ::selection { background: transparent; }
+}
+
+.loading {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 2px solid #87ceeb;
+  border-top-color: transparent;
+  border-radius: 100%;
+  animation: circle infinite 0.75s linear;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
