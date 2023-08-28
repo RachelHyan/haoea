@@ -1,0 +1,32 @@
+{
+	"name": "mes-wx",
+	"appid": "wx2017bd2f4247c060",
+	"description": "",
+	"versionName": "1.0.0",
+	"versionCode": "100",
+	"transformPx": false,
+	"networkTimeout": {
+		"request": 5000
+	},
+	"mp-weixin": {
+		"appid": "wx2017bd2f4247c060",
+		"setting": {
+			"urlCheck": false
+		},
+		"usingComponents": true,
+		"requiredBackgroundModes": ["location"],
+		"permission": {
+			"scope.userLocation": {
+				"desc": "你的位置信息将用于小程序位置接口的效果展示"
+			}
+		},
+		"lazyCodeLoading": "requiredComponents",
+		"requiredPrivateInfos": [
+			"startLocationUpdateBackground",
+			"getLocation",
+			"onLocationChange"
+		]
+		
+	},
+	"vueVersion": "3"
+}
