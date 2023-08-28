@@ -1,0 +1,52 @@
+{
+	"name": "mes-wx",
+	"version": "1.5.1",
+	"scripts": {
+		"dev": "uni -p mp-weixin",
+		"build": "uni build -p mp-weixin",
+		"openapi": "ts-node openapi.config.ts",
+		"release": "standard-version",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@dcloudio/uni-app": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/uni-components": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/uni-mp-weixin": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/uni-ui": "^1.4.28",
+		"cos-wx-sdk-v5": "^1.4.10",
+		"dayjs": "^1.11.8",
+		"vue": "^3.3.4",
+		"vue-i18n": "^9.2.2"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.6.5",
+		"@dcloudio/types": "^3.3.3",
+		"@dcloudio/uni-automator": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/uni-cli-shared": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/uni-stacktracey": "3.0.0-alpha-3060720221018006",
+		"@dcloudio/vite-plugin-uni": "3.0.0-alpha-3060720221018006",
+		"@types/node": "^18.16.18",
+		"@typescript-eslint/eslint-plugin": "5.30.6",
+		"@typescript-eslint/parser": "5.30.6",
+		"@yxgr/openapi": "^1.0.3",
+		"@yxgr/uni-app-types": "0.0.2",
+		"commitlint": "^17.6.5",
+		"eslint": "^8.43.0",
+		"eslint-config-standard": "17.0.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-n": "15.2.4",
+		"eslint-plugin-promise": "6.0.0",
+		"eslint-plugin-vue": "9.2.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
+		"postcss": "^8.4.24",
+		"postcss-sass": "^0.5.0",
+		"sass": "^1.63.5",
+		"standard-version": "^9.5.0",
+		"stylelint": "^14.16.1",
+		"stylelint-config-recess-order": "^3.1.0",
+		"stylelint-config-standard": "^26.0.0",
+		"typescript": "^4.9.5",
+		"vite": "^4.3.9"
+	}
+}

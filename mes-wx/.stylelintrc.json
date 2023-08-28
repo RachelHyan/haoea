@@ -1,0 +1,23 @@
+{
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-recess-order"
+	],
+	"overrides": [
+		{
+			"files": [
+				"**/*.sass"
+			],
+			"customSyntax": "postcss-sass"
+		},
+		{
+			"files": [
+				"**/*.css"
+			],
+			"customSyntax": "postcss"
+		}
+	],
+	"rules": {
+		"selector-class-pattern": null
+	}
+}

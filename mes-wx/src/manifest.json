@@ -1,0 +1,28 @@
+{
+	"name": "mes-wx",
+	"appid": "wx2017bd2f4247c060",
+	"description": "洁亚环卫现场作业管理小程序，解决县城考勤、督查、成本核算等重要问题",
+	"versionName": "1.4.1",
+	"versionCode": 100,
+	"transformPx": false,
+	"mp-weixin": {
+		"appid": "wx2017bd2f4247c060",
+		"setting": {
+			"urlCheck": false
+		},
+		"usingComponents": true,
+		"permission": {
+			"scope.userLocation": {
+				"desc": "你的位置信息将用于小程序位置接口的效果展示"
+			}
+		},
+		"requiredBackgroundModes": ["location"],
+		"lazyCodeLoading": "requiredComponents",
+		"requiredPrivateInfos": [
+			"startLocationUpdateBackground",
+			"getLocation",
+			"onLocationChange"
+		]
+	},
+	"vueVersion": "3"
+}

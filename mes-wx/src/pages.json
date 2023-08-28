@@ -1,0 +1,200 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/loading/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "加载页",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录",
+				"disableScroll": false
+			}
+		},
+		{
+			"path": "pages/login/components/privacy-policy",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "隐私协议"
+			}
+		},
+		{
+			"path": "pages/login/components/user-protocol",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "用户隐私"
+			}
+		},
+		{
+			"path": "pages/project-select/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "项目选择",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/camera/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "相机"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "首页",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/object-list/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "对象列表",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/object-config/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "对象编辑/详情/新增"
+			}
+		},
+		{
+			"path": "pages/history-list/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "历史列表"
+			}
+		},
+		{
+			"path": "pages/supervise-form/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "督查表单"
+			}
+		},
+		{
+			"path": "pages/punch-clock/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "打卡列表",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/punch-clock-personnal/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "打卡列表(一线人员)",
+				"navigationBarTextStyle": "white",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/punch-clock-form/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "打卡表单",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/rectify-list/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "整改列表",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/rectify-list/problem-rectify/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "问题整改"
+			}
+		},
+		{
+			"path": "pages/personnel-list/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "人员列表",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/personnel-collect-form/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "人脸采集"
+			}
+		},
+		{
+			"path": "pages/work-track/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "工作轨迹",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/message-center/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "消息中心",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/project-board/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "项目看板"
+			}
+		},
+		{
+			"path": "pages/project-board-list/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "项目看板列表",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/project-board-detail/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "项目看板详情",
+				"disableScroll": true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "MES",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
