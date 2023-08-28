@@ -1,0 +1,32 @@
+module.exports = {
+  root: true,
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+  },
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/recommended'
+  ],
+  rules: {
+    'comma-dangle': ['error', {
+      arrays: 'never',
+      objects: 'always',
+      imports: 'never',
+      exports: 'never',
+      functions: 'never',
+    }],
+    'no-lonely-if': 'error',
+    'quotes': ['error', 'single'],
+    'no-tabs': ['off'],
+    'indent': ['error', 2],
+    'semi': ['off'],
+    'vue/no-multiple-template-root': ['off'],
+    'vue/no-v-model-argument': ['off'],
+    '@typescript-eslint/ban-ts-comment': ['off'],
+    '@typescript-eslint/no-var-requires': ['off'],
+    '@typescript-eslint/no-explicit-any': ['off'],
+    'vue/no-v-for-template-key': ['off'],
+  },
+};
