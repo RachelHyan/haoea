@@ -1,0 +1,32 @@
+@font-face {
+  font-family: noto-sans-hans-heavy;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./NotoSansHans-Heavy.otf");
+}
+
+@font-face {
+  font-family: noto-sans-hans-bold;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./NotoSansHans-Bold.otf");
+}
+
+@font-face {
+  font-family: noto-sans-hans-medium;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./NotoSansHans-Medium.otf");
+}
+
+* {
+  font-family: noto-sans-hans-medium, Arial, sans-serif;
+}
+
+.font-heavy {
+  font-family: noto-sans-hans-heavy, Arial, sans-serif;
+}
+
+.fonts-bold {
+  font-family: noto-sans-hans-bold, Arial, sans-serif;
+}
